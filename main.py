@@ -1,3 +1,4 @@
+# method to encode the password
 def encode(password):
     list_password = list(password)
     for i in range(0, len(password)):
@@ -5,7 +6,7 @@ def encode(password):
         i += 1
     return "".join(list_password)
 
-
+# method to decode the encoded password
 def decode(password):
     pass_list = list(password)
     en_pass = list()
@@ -16,7 +17,7 @@ def decode(password):
     en_pass = ''.join(en_pass)
     return en_pass
 
-
+# main method that prints menu and encodes or decodes based on user selection
 if __name__ == "__main__":
     while True:
         print("Menu\n-------------")
